@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION=1.0.0.6
+VERSION=1.0.0.7
 
 clear
 echo "Starting PRCY Masternode download and install..."
