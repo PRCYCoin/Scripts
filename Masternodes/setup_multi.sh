@@ -131,13 +131,13 @@ for i in `seq 1 1 $MNCOUNT`; do
   echo "Downloading bootstrap..."
   wget -o theiexplorers.com/peers.dat
   cp peers.dat $CONF_DIR/peers.dat
-  rm -rf bootstrap.zip
-  wget https://bootstrap.prcycoin.com/bootstrap.zip
+  rm -rf prcy_bootstrap.zip
+  wget https://bootstrap.prcycoin.com/prcy_bootstrap.zip
   echo "Removing old blocks, chainstate, and database folders...."
   rm -rf $CONF_DIR/blocks $CONF_DIR/chainstate $CONF_DIR/database
   echo "Installing new blocks folders..."
-  sudo unzip -o bootstrap.zip -d $CONF_DIR
-  rm -rf bootstrap.zip
+  sudo unzip -o prcy_bootstrap.zip -d $CONF_DIR
+  rm -rf prcy_bootstrap.zip
   echo "Bootstrap installed!"
 
   sh ~/bin/${NAME}d_$ALIAS.sh

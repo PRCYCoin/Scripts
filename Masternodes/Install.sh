@@ -43,11 +43,11 @@ read BOOTSTRAP
 
 if [[ $BOOTSTRAP =~ "y" ]] ; then
   echo "Downloading BootStrap..."
-  wget -N https://bootstrap.prcycoin.com/bootstrap.zip
+  wget -N https://bootstrap.prcycoin.com/prcy_bootstrap.zip
   echo "Removing old blocks, chainstate, and database folders...."
   rm -rf ~/.prcycoin/blocks ~/.prcycoin/chainstate ~/.prcycoin/database ~/.prcycoin/.lock ~/.prcycoin/prcycoind.pid
   echo "Installing new blocks/chainstate folders..."
-  unzip -o bootstrap.zip -d ~/.prcycoin
+  unzip -o prcy_bootstrap.zip -d ~/.prcycoin
   echo "Bootstrap installed!"
 fi
 
