@@ -19,14 +19,7 @@ echo "Do you want to install all needed dependencies (no if you did it before)? 
 read DOSETUP
 
 if [[ $DOSETUP =~ "y" ]] ; then
-  sudo apt-get update
-  sudo apt-get install -y unzip
-  sudo apt-get -y upgrade
-  sudo apt-get -y dist-upgrade
-  sudo apt-get install -y nano htop git
-  sudo apt-get install -y autoconf
-  sudo apt-get install -y automake unzip
-  sudo apt-get update
+  sudo apt-get install -y nano htop git autoconf automake unzip
   sudo apt update && sudo apt upgrade -y
   
 
@@ -129,7 +122,7 @@ for i in `seq 1 1 $MNCOUNT`; do
   mv ${NAME}.conf_TEMP $CONF_DIR/${NAME}.conf
   
   echo "Downloading bootstrap..."
-  wget -o theiexplorers.com/peers.dat
+  wget -o https://bootstrap.prcycoin.com/peers.dat
   cp peers.dat $CONF_DIR/peers.dat
   rm -rf prcy_bootstrap.zip
   wget https://bootstrap.prcycoin.com/prcy_bootstrap.zip
