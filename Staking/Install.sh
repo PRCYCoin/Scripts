@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION=2.0.0.0
+VERSION=2.0.0.1
 
 clear
 echo "Starting PRCY Staking node download and install script"
