@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION=2.0.0.1
+VERSION=$(curl -s4 https://raw.githubusercontent.com/PRCYCoin/PRCYCoin/master/version.txt)
 
 clear
 echo "Starting PRCY Masternode download and install..."

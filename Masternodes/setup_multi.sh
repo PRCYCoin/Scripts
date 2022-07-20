@@ -1,5 +1,5 @@
 #/bin/bash
-VERSION=2.0.0.1
+VERSION=$(curl -s4 https://raw.githubusercontent.com/PRCYCoin/PRCYCoin/master/version.txt)
 
 cd ~
 echo "****************************************************************************"
