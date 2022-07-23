@@ -12,7 +12,7 @@ sudo apt-get install unzip -y
 echo "Extracting update..."
 sudo unzip -jo prcycoin-v$VERSION-x86_64-linux.zip -d /usr/local/bin
 echo "Set permissions on files..."
-sudo chmod +x /usr/local/bin/daps*
+sudo chmod +x /usr/local/bin/prcycoin*
 echo "Running prcycoind..."
 prcycoind -daemon
 echo "Cleaning up..."
