@@ -23,7 +23,7 @@ sudo cp /usr/local/bin/prcycoin-cli00 /usr/local/bin/prcycoin-cli01
 sudo cp /usr/local/bin/prcycoin-cli00 /usr/local/bin/prcycoin-cli02
 sudo cp /usr/local/bin/prcycoin-cli00 /usr/local/bin/prcycoin-cli03
 sudo cp /usr/local/bin/prcycoin-cli00 /usr/local/bin/prcycoin-cli04
-sudo chmod +x /usr/local/bin/daps*
+sudo chmod +x /usr/local/bin/prcy*
 echo "Creating .prcycoin directories..."
 mkdir ~/.prcycoin00
 mkdir ~/.prcycoin01

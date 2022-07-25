@@ -42,7 +42,7 @@ if [[ $DOSETUP =~ "y" ]] ; then
   chmod +x /usr/local/bin/prcycoind
   chmod +x /usr/local/bin/prcycoin-cli
   chmod +x /usr/local/bin/prcycoin-qt
-  sudo chmod 755 daspcoin*
+  sudo chmod 755 prcycoin*
   sudo mv prcycoin* /usr/bin
   cd
   rm -rf prcycoin-v$VERSION-x86_64-linux.zip
