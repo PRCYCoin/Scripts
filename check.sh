@@ -4,7 +4,7 @@ PRCY='prcycoind'
 
 clear
 echo "Checking if prcycoind is running..."
-if ps ax | grep -v grep | grep $PRCY> /dev/null
+if ps aux | grep -v grep | grep $PRCY> /dev/null
 then
     echo "$PRCY is running, no further action required"
 else
