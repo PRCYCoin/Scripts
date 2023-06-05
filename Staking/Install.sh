@@ -11,9 +11,9 @@ echo "Installing unzip..."
 sudo apt-get install unzip -y
 echo "Unzipping $VERSION-linux.zip..."
 sudo unzip -jo prcycoin-v$VERSION-x86_64-linux.zip -d /usr/local/bin
-chmod +x /usr/local/bin/prcycoind
-chmod +x /usr/local/bin/prcycoin-cli
-chmod +x /usr/local/bin/prcycoin-qt
+sudo chmod +x /usr/local/bin/prcycoind
+sudo chmod +x /usr/local/bin/prcycoin-cli
+sudo chmod +x /usr/local/bin/prcycoin-qt
 echo "Creating .prcycoin directory..."
 mkdir ~/.prcycoin
 cd ~/.prcycoin
